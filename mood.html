@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mood.css">
+
+    <title>Daily Mood Survey</title>
+
+</head>
+
+<body id="body">
+    <h1 class="title">How has your day been?</h1>
+    <p class="title">Please fill in the form about how you have felt today...</p>
+
+    <section class="questions">
+        <form name="moodForm" >
+            <label style="margin-bottom: 15px;" for="name">Name:</label>
+            <input class="name" style="margin-bottom: 10px; width: 80%;" type="text" name="name" id="name">
+            <br>
+
+            <span id="qs">What is your age?</span>
+            <br>
+            <input class="ageinput" type="radio" name="answer" value="18-25" id="18-25">
+            <label  class="ageanswers" for="18-25">18-25</label>
+
+            <br>
+            <input style="right: 20%;"class="ageinput" type="radio" name="answer" value="26-35" id="26-35">
+            <label class="ageanswers" for="26-35">26-35</label>
+            <br>
+
+            <input class="ageinput" type="radio" name="answer" value="35-50" id="30-50">
+            <label class="ageanswers" for="35-50">30-50</label>
+            <br>
+            <input class="ageinput" type="radio" name="answer" value="50+" id="50+">
+            <label class="ageanswers" for="50+">50 + </label>
+            <br>
+
+            <span class="feeling">How have you felt today?<br>
+                <p>(Can select as many as you want):</p>
+            </span>
+            <br>
+            <input class="checkbox" type="checkbox" id="Happy" name="emotion" value="happy">
+            <label class="checkbox" for="happy">Happy</label>
+
+            <input class="checkbox" type="checkbox" id="Meh" name="emotion" value="Meh">
+            <label class="checkbox" for="Meh">Meh</label>
+
+            <input class="checkbox" type="checkbox" id="unhappy" name="emotion" value="unhappy">
+            <label class="checkbox" for="unhappy">Unhappy</label>
+
+            <input class="checkbox" type="checkbox" id="Sad" name="emotion" value="Sad">
+            <label class="checkbox" for="Sad">Sad</label>
+
+            <input class="checkbox" type="checkbox" id="Angry" name="emotion" value="Angry">
+            <label class="checkbox" for="Angry">Angry</label>
+
+            <input class="checkbox" type="checkbox" id="Stressed" name="emotion" value="Stressed">
+            <label class="checkbox" for="Stressed">Stressed</label>
+            <br>
+
+            <label class="rating" for="rating"> How would you rate your day on a scale of 1-10?<br>
+                <p>(1 being lowest, 10 being highest)</p>
+            </label>
+            <br>
+            <input style="width: 100%; margin-bottom: 15px;" type="range" id="rating" name="rating" min="0" max="10" step="1">
+            <output style="text-align: center;"id="output"for="rating" ></output>
+            <br>
+
+            <label for="onegoodthing" class="margin">What is one think that has made your day good?</label>
+            <input name="onegoodthing"class="margin" style="width: 100%" list="onegoodthing" type="text">
+            <datalist id="onegoodthing">
+                <option value="friends">
+                <option value="family">
+                <option value="work">
+                <option value="myself">
+            </datalist>
+            <br>
+            <label  class="text" for="write">What is one thing that has made you smile today?</label>
+            <br>
+            <textarea style="width: 100% ;height: 150px ;margin-top: 20px;" id="write" name="write" placeholder="Write here..."></textarea>
+            <br>
+        <div id="submit">
+            <button id="submitbutt" type="button" value="submit">Sumbit</button>
+            </div>
+        </form>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script rel="text/javascript" src="mood.js">
+    </script>
+
+</body>
+
+
+
+</html>

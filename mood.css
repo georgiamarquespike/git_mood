@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+#body {
+  font-family: 'Open Sans', sans-serif;
+   background-color: #ADF263;
+ height: 80%;
+}
+.title {
+  text-align: center;
+  padding: 1%;
+  background-color: #ADF263;
+  font-size: 2rem;
+}
+.questions {
+  border: 5px solid white;
+  font-size: 1.125rem;
+  padding: 2.5% 10%; 
+  border-radius: 10px;
+  position: relative;
+  width: 70%;
+  display: inline-block;
+  left: 15%;
+  background-color: #EEF263; 
+  font-size: 1rem;
+  margin-bottom: 2em;
+}
+#qs {
+  display: block;
+  }
+  
+.ageanswers {
+  display: inline-block;
+  position: relative; 
+  font-size: 1rem;
+  float: left;
+height: 10px;
+left: 3em;
+
+}
+
+.ageinput {
+    display: inline-block;
+    position: relative;
+    float: left;
+    left: 3%;
+    
+  }
+.feeling {
+ margin-top: 2%;
+ display: block;
+ 
+}
+  
+.checkbox {
+  margin: -0.5% 0.5% 1% 0 ;
+  display: inline-block;
+  text-align: center;
+  min-width: 2.5%;
+  
+
+}
+.p {
+  font-size: .75rem;
+  margin-bottom: -15px;
+}
+.margin {
+  margin-bottom: 15px;
+  position: inline-block;
+}
+
+#submit {
+    position: relative;
+    text-align: center;
+
+    margin: 0 auto;
+    
+}
+
+
+@media only screen and (max-width: 540px) {
+  html {
+    font-size: 12px;
+  }
+
+  .questions {
+   width: 80%;
+    
+  }
+  .ageanswers {
+    display: inline-block;
+    
+    float: left;
+    margin: 0;  
+  }
+  }
+ 
+
+
+   
+
+
+    
+
+
